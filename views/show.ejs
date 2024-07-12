@@ -1,4 +1,20 @@
 <% layout("./layouts/boilerplate.ejs") %>
+<style>
+  @media only screen and (max-width: 868px){
+      .card-img-top{
+        width: 70vh !important;
+      }
+      .review{
+        width: 70vh !important;
+      }
+      ul{
+        width: 70vh !important;
+      }
+      .card{
+        width: 70vh !important;
+      }
+  }
+  </style>
 <body>
     <div class="cols-8 offset-2">
         <h1><%=arr.title%></h1>
@@ -19,6 +35,7 @@
                 </form>
             </div>
         <%}%>
+    <div class="review">
     <% if(currUser) {%>
         <div class="cols-8 offset-3 mb-3 mt-3">
             <h4>Leave a Reviews</h4><br>
@@ -72,5 +89,6 @@
             </div>
         </div>
           </div>
+        </div>
     </div>
 </body>

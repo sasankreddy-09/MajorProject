@@ -14,7 +14,7 @@ const listingRouter=require("./Router/listingRouter.js");
 const reviewRouter=require("./Router/reviewRouter.js");
 const userRouter=require("./Router/user.js");
 const MongoStore = require('connect-mongo');
-const port=3000;
+const port=8080;
 // const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
 const Atlas_url=process.env.ATLAS_MONGODB;
 // connecting to mongoose
